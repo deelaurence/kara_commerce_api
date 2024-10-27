@@ -1,0 +1,20 @@
+PUT http://localhost:8000/api/categories/2/
+Content-Type: application/json
+
+{
+    "name":"Pho"
+}
+
+# fields = ['id', 'name', 'description', 'price', 'stock', 'category']
+
+###
+POST http://localhost:8000/api/products/
+Content-Type: application/json
+
+{
+    "name":"Android",
+    "description":"Low budget phone",
+    "price":500,
+    "stock":45,
+    "category_id":2
+}
